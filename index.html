@@ -19,10 +19,9 @@
         <i class="fa fa-bars toggle-menu" ></i>
         <ul class="nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <!-- <li><a href="#">sign up</a></li>
-            <li><a href="#">Login</a></li> -->
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./new index.html">Services</a></li>
+           
 
             <li>
                 <a href="#">
@@ -39,6 +38,18 @@
         </ul>
 
     </header>
+            <!-- the welcome message -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <p>Welcome!   Embark on an Intellectual Odyssey of Profound Knowledge and Erudition</p>
+                    <button onclick="closeModal()">OK</button>
+                </div>
+            </div>
+
+
+
+
     <main>
         <section class="featured-article">
             <h2>Featured Article</h2>
@@ -52,37 +63,42 @@
                 <img src="./images/3.jpg" alt="Author Avatar">
                 <p>Written by <span class="author-name">Jane Smith</span></p>
                 <p class="publication-date">Published on August 1, 2023</p>
-                <!-- <p class="tags">Tags: <a href="#">Technology</a>, <a href="#">Gadgets</a>, <a href="#">Innovation</a></p> -->
+             
+                <!-- my like feature -->
+              <span id="likes-count-0"class="likes-count">Likes</span>
+
+        <button class="like-button" onclick="likePost(0)">
+            <i class="fas fa-thumbs-up"></i>
+        </button>
+        
+
             </div>
         </section>
 
         <section class="blog-entries">
             <article class="blog-entry">
-                <h2>Blog Post Title 1</h2>
-                <img src="image1.jpg" alt="Blog Post Image 1">
-                <p>Blog post content...</p>
+                <h2>Unleashing the Power of JavaScript: A Comprehensive Guide to Web Development</h2>
+                <img src="./images/pexels-marc-mueller-325111.jpg" alt="Blog Post Image 1">
+                <p>JavaScript is the language of the browser, allowing developers to breathe life into static web pages. As you embark on this journey, we'll cover everything you need to know, starting with the core concepts like variables, data types, and control structures. From there, we'll dive into manipulating the Document Object Model (DOM), enabling you to create interactive and engaging user interfaces.</p>
                 <div class="author-info">
-                    <img src="author1-avatar.jpg" alt="Author Avatar">
+                    <img src="./images/pexels-christina-morillo-1181243.jpg" alt="Author's pics">
                     <p>Written by <span class="author-name">Jane Smith</span></p>
-                    <p class="publication-date">Published on August 3, 2023</p>
-                    <!-- <p class="tags">Tags: <a href="#">Software</a>, <a href="#">Programming</a></p> -->
+                    <p class="publication-date">Published on August 13, 2023</p>
+                    
                 </div>
+                <a href="#" class="read-more">Read More</a> 
+                
             </article>
+            
             <article class="blog-entry">
-                <h2>Blog Post Title 1</h2>
+                <h2>Mastering CSS: A Comprehensive Guide to Styling Web Pages</h2>
                 <img src="./images/1.jpg" alt="Blog Post Image 1">
-                <p>Blog post content...</p>
+                <p>In the ever-evolving landscape of web development, Cascading Style Sheets (CSS) stand as a cornerstone technology, playing a pivotal role in the presentation and aesthetics of websites. Welcome to our comprehensive guide, where we embark on an enlightening journey through the intricacies of CSS. From the very basics to advanced techniques, this guide is your key to unlocking the power of CSS and creating visually stunning, responsive, and user-friendly web pages.</p>
                 <div class="author-info">
                     <!-- Author information here -->
                 </div>
-                <a href="#" class="read-more">Read More</a> <!-- Add the "Read More" button link -->
+                <a href="#" class="read-more">Read More</a> 
             </article>
-            
-            <article class="blog-entry">
-                <!-- Content of the second blog post -->
-                <a href="#" class="read-more">Read More</a> <!-- Add the "Read More" button link -->
-            </article>
-            
             
 </section>
 
@@ -90,18 +106,19 @@
     <section class="categories">
         <h3>Categories</h3>
         <ul>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Gadgets</a></li>
-            <li><a href="#">Programming</a></li>
-            <!-- Add more categories here -->
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+           
         </ul>
     </section>
+
     <section class="recent-posts">
         <h3>Recent Posts</h3>
         <ul>
             <li><a href="#">Recent Post 1</a></li>
             <li><a href="#">Recent Post 2</a></li>
-            <!-- Add more recent posts here -->
+           
         </ul>
     </section>
 </aside>
@@ -111,11 +128,11 @@
 <ul>
     <li><a href="#">Facebook</a></li>
     <li><a href="#">Twitter</a></li>
-    <!-- Add more social media links here -->
+    
 </ul>
 <p>&copy; 2023 Tech Blog</p>
 </footer>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>

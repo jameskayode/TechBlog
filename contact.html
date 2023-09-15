@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>JJKTECH-CONTACT</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>JJKTECH</span></h1>
+        </div>
+        <i class="fa fa-bars toggle-menu" ></i>
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <!-- <li><a href="#">sign up</a></li>
+            <li><a href="#">Login</a></li> -->
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    James Joseph
+                    <i class="fa fa-chevron-down" style="font-size: .8em"></i>
+                </a>
+            <ul>
+                <li><a href="#">Dahsboard</a></li>
+                <li><a href="#" class="logout">Logout</a></li>
+    
+            </ul>
+        </li>
+        </ul>
+
+    </header>
+
+
+    <div class="max-width-1 m-auto">
+        
+    </div>
+    <div class="contact-content font1 max-width-1 m-auto">
+        <div class="max-width-1 m-auto mx-1">
+            <h2>Feel Free to Contact Us</h2>
+
+            <div class="contact-form">
+                <div class="form-box">
+                    
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter Your Email Id">
+                </div>
+                
+                <div class="form-box">
+                    <textarea name="" id="comment-input" cols="30" rows="10" placeholder="How may we help you?"></textarea>
+               
+                </div>
+                <div class="form-box" >
+                    <button class="btn" onclick="addComment()">Submit</button>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+        </div>
+
+    </div>
+ 
+
+   
+    <footer>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <!-- Add more social media links here -->
+        </ul>
+        <p>&copy; 2023 Tech Blog</p>
+        </footer>
+        
+   <script src="./contact.js"></script>
+</body>
+</html>

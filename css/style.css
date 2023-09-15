@@ -154,7 +154,7 @@ main {
     background-color: #fff;
     padding: 20px;
     margin: 10px;
-    flex-basis: calc(33.33% - 40px); /* Adjust the width as needed */
+    flex-basis: calc(33.33% - 40px) 
 }
 
 .blog-entry h2 {
@@ -181,7 +181,7 @@ main {
 
 /* Style the footer */
 footer {
-    background-color: #333;
+    background-color: #bd6418;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -216,6 +216,63 @@ footer ul li {
     cursor: pointer;
     display: block;
 }
+
+/* Add this CSS in your external style.css or within a <style> tag in the <head> */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #f5f5f1;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Style for the Like button */
+button.like-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex; /* Allows inline alignment of the icon and text */
+    align-items: center; /* Vertically align the icon and text */
+}
+
+/* Style for the Like icon */
+button.like-button i {
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+/* Style for Likes counters */
+.likes-count {
+    color: #333;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 
 
 

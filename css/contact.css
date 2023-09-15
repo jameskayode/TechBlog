@@ -1,0 +1,60 @@
+.contact-content{  
+    height: 100vh;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative; 
+    overflow: hidden;
+  }
+  
+  .contact-content::after {
+    content: "";
+    background-image: url("../img/11.svg");
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+    z-index: -1;
+  }
+ /* Style for comments */
+.comments-container {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* Style for comment input and submit button */
+#comment-input {
+  width: 70%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#comment-input:focus {
+  outline: none;
+}
+
+#comment-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Style for likes and comments count */
+.likes-count,
+.comments-count {
+    color: #333;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* Style for the 'Thank you' message */
+.thank-you-message {
+  color: green;
+  font-weight: bold;
+}
+

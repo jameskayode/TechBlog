@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const blogCard = createBlogCard(blog);
             blogContainer.appendChild(blogCard);
 
-            // Add event listener for comment button click
-            const commentButton = blogCard.querySelector('.comment-button');
-            commentButton.addEventListener('click', () => toggleComments(blogCard));
+            // Add event listener for blog card click
+            blogCard.addEventListener('click', () => redirectToFullBlog(blog.id));
         });
     }
 
+    // Function to create a blog card
     function createBlogCard(blog) {
         const blogCard = document.createElement('div');
         blogCard.classList.add('blog-card');
-    
+
         blogCard.innerHTML = `
             <img src="${blog.image}" alt="${blog.title}">
             <h2>${blog.title}</h2>
@@ -58,10 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="add-comment-button" onclick="addComment(${blog.id})">Add Comment</button>
             </div>
         `;
-    
+
         return blogCard;
     }
-        
 
     // Function to toggle the visibility of comments
     function toggleComments(blogCard) {
@@ -71,6 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             commentDisplayArea.style.display = 'none';
         }
+    }
+
+    // Function to redirect to the full blog page
+    function redirectToFullBlog(blogId) {
+        // Assuming you have a separate HTML file for displaying full blog stories
+        window.location.href = `blog.html?id=${blogId}`;
     }
 
     displayBlogCards();
@@ -94,4 +99,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-

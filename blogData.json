@@ -17,7 +17,7 @@
           }
         ],
         "date": "August 1, 2023",
-        "image": "image1.jpg"
+        "image": "./images/bg.jpg"
       },
       {
         "id": 2,
@@ -32,7 +32,7 @@
           }
         ],
         "date": "August 10, 2023",
-        "image": "image2.jpg"
+        "image": "./images/pexels-lukas-574073.jpg"
       },
       {
         "id": 3,
@@ -42,7 +42,7 @@
         "likes": 20,
         "comments": [],
         "date": "August 15, 2023",
-        "image": "image3.jpg"
+        "image": "./images/pexels-marc-mueller-325111.jpg"
       }
     ]
   }

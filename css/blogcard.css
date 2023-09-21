@@ -12,13 +12,16 @@
 .blog-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .blog-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    
+    max-width: 50%;
+    max-height: 10%;
+    border-radius: 20px;
     margin-bottom: 10px;
+    
 }
 
 .blog-card h2 {

@@ -1,0 +1,94 @@
+/* Custom CSS for blog cards */
+.blog-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog-card h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.blog-category {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.interactions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-button,
+.comment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.like-count,
+.comment-count {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Custom styles for hover effect on buttons */
+.like-button:hover,
+.comment-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the "Like" and "Comment" icons (FontAwesome) */
+.like-button i,
+.comment-button i {
+    margin-right: 5px;
+}
+
+

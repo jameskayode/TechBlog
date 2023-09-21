@@ -72,3 +72,26 @@ function updateLikesCount(postIndex) {
 //         });
 //     });
 // });
+
+   
+    // Function to scroll to the top of the page smoothly
+document.addEventListener('DOMContentLoaded', function() {
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    window.addEventListener('scroll', function() {
+        var backToTopButton = document.getElementById('back-to-top');
+
+        if (window.scrollY > 200) { 
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', scrollToTop);
+});

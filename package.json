@@ -1,0 +1,26 @@
+{
+  "name": "myrealblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-json":"json-server --watch db.json"
+    
+  }, 
+  "repository": {
+
+    "type": "git",
+    "url": "git+https://github.com/jameskayode/TechBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameskayode/TechBlog/issues"
+  },
+  "homepage": "https://github.com/jameskayode/TechBlog#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}

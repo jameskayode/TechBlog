@@ -1,0 +1,54 @@
+{
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "HTML: The Building Blocks of the Web",
+      "author": "Jane Smith",
+      "category": "Web Development",
+      "likes": 15,
+      "comments": [
+        {
+          "id": 1,
+          "user": "User1",
+          "comment": "Great article!",
+          "date": "August 1, 2023"
+        },
+        {
+          "id": 2,
+          "user": "User2",
+          "comment": "I learned a lot.",
+          "date": "August 2, 2023"
+        }
+      ],
+      "date": "August 1, 2023",
+      "image": "image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Mastering CSS: A Comprehensive Guide to Styling Web Pages",
+      "author": "John Doe",
+      "category": "Web Design",
+      "likes": 10,
+      "comments": [
+        {
+          "id": 3,
+          "user": "User3",
+          "comment": "CSS is tricky but fun!",
+          "date": "August 5, 2023"
+        }
+      ],
+      "date": "August 10, 2023",
+      "image": "image2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Unleashing the Power of JavaScript: A Comprehensive Guide to Web Development",
+      "author": "Alice Johnson",
+      "category": "Reactjs",
+      "likes": 20,
+      "comments": [],
+      "date": "August 15, 2023",
+      "image": "image3.jpg"
+    }
+  ]
+}

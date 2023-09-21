@@ -1,4 +1,5 @@
-.contact-content{  
+.contact-content{ 
+   background-image: url("/images/bg.jpg"); 
     height: 100vh;
     margin-top: 32px;
     padding: 9px;
@@ -8,7 +9,7 @@
   
   .contact-content::after {
     content: "";
-    background-image: url("../img/11.svg");
+   
     position: absolute;
     top:0;
     width: 100%;
